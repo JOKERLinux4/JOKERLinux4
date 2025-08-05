@@ -1,0 +1,28 @@
+{
+  "name": "JOKER Bot",
+  "description": "بوت تيليغرام تشغيل تلقائي عبر هيروكو",
+  "repository": "https://github.com/JOKERLinux4/JOKERLinux4",
+  "env": {
+    "API_ID": {
+      "description": "ضع API ID هنا"
+    },
+    "API_HASH": {
+      "description": "ضع API HASH هنا"
+    },
+    "BOT_TOKEN": {
+      "description": "توكن بوت تيليغرام من BotFather"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": []
+}
